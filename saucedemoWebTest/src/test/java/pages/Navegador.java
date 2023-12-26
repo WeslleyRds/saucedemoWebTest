@@ -59,6 +59,7 @@ public class Navegador {
 				System.out.println("Screenshot capturada: " + screenshotName);
 			} catch (Exception e) {
 				System.out.println("Erro ao capturar a screenshot: " + e.getMessage());
+				System.out.println("------- Causa do erro  ------" + e.getCause());
 			}
 		}
 
