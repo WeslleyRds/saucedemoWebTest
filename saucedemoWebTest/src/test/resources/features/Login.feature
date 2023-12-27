@@ -10,8 +10,8 @@ Feature: Acessar o site
 
 
 @CT01 
- Scenario: CT01 - Validar checkout do produto
- 	When  realizo o login 
+ Scenario Outline: CT01 - Validar checkout do produto
+ 	When  realizo o login
 	And 	escolho o produto  
 	And 	faco o checkout
 	Then 	efetuo o lougout
@@ -21,7 +21,23 @@ Feature: Acessar o site
 	When  insiro dados invalido 
 	Then 	uma mensagem de erro deve ser apresentada
 
-  @CT03
-  Scenario: CT03 - Validar imagem do produto
-	When  realizo o login com outro usuário
-	Then 	cada imagem deve ser exibida de acordo com o seu nome
+ @CT03
+ Scenario: CT03 - Validar imagem do produto
+	When  realizo o login com usuario problem_user
+	Then 	realizo o checkout do produto
+	
+	@CT04
+  Scenario: CT04 - Validar layout da pagina
+	When  	realizo o login com usuario visual_user
+	Then 		valido o layout da pagina
+	
+	@CT05
+  Scenario: CT05 - Validar performace da pagina
+	When  	realizo o login com usuario performance_glitch_user
+	Then 		valido a performace da pagina
+	
+	@CT06
+  Scenario: CT06 - Validar erros da pagina
+	When  	realizo o login com usuario error_user
+	Then 		valido se contém erro na pagina
+

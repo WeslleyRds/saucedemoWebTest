@@ -20,39 +20,73 @@ public class ElementosWeb {
   By LastName = By.id("last-name"); 
   By PostalCode =By.id("postal-code");
   By Continue = By.id("continue"); 
-  By Finish =By.id("finish");
+  By Finish = By.id("finish");
+  By LabsBike = By.id("add-to-cart-sauce-labs-bike-light");
+  By Bolt = By.id("add-to-cart-sauce-labs-bolt-t-shirt");
+  By continueShopping = By.id("continue-shopping");
   
-  public By getUsername() { return Username; }
+  public By getUsername() {
+	  return Username; 
+	  }
   
-  public By getPassword() { return Password; }
+  public By getPassword() { 
+	  return Password; 
+	  }
   
-  public By getBtn() { return Btn; }
+  public By getBtn() { 
+	  return Btn; 
+	  }
   
-  public By getBackpack() { return Backpack; }
+  public By getBackpack() {
+	  return Backpack; 
+	  }
   
-  public By getCarrinho() { return Carrinho; }
+  public By getCarrinho() {
+	  return Carrinho; 
+	  }
   
-  public By getCheckout() { return Checkout; }
+  public By getCheckout() { 
+	  return Checkout; 
+	  }
   
-  public By getMenu() { return Menu;
+  public By getMenu() {
+ return Menu;
   
   }
   
   public By getLogout() {
-  
   return Logout;
   
  }
   
-  public By getFirstName() { return FirstName; }
+  public By getFirstName() { 
+	  return FirstName; 
+	  }
   
-  public By getLastName() { return LastName; }
-  
-  public By getPostalCode() { return PostalCode; }
-  
-  public By getContinue() { return Continue; }
-  
- public By getFinish() { return Finish; }
-  
+  public By getLastName() { 
+	  return LastName; 
   }
+  
+  public By getPostalCode() { 
+	  return PostalCode; 
+	  }
+  
+  public By getContinue() { 
+	  return Continue; 
+	  }
+  
+ public By getFinish() {
+	 return Finish; 
+	 }
+  
+ public By getLabsBike () {
+	return Backpack;
+	 }
+ public By getBolt() {
+	 return Bolt;
+ }
+ public By getcontinueShopping() {
+	 return continueShopping;
+  }
+}
  
